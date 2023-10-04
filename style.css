@@ -1,0 +1,291 @@
+/* Body */
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* navbar */
+
+#logo{
+  width: 190px;
+  height: 48px;
+}
+
+/* Underline effect */
+
+.hover-underline-animation {
+ display: inline-block;
+ position: relative;
+}
+
+.hover-underline-animation:hover {
+  color:#17a2b8;
+  transition: 0.5s;
+}
+
+.hover-underline-animation:after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ background-color: #0087ca;
+ transform-origin: bottom left;
+ transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+ transform: scaleX(1);
+ transform-origin: bottom left;
+}
+
+head shadow {
+ box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.navbar-toggler:focus{
+ outline:  none;
+}
+
+/* Carousel */
+
+.carousel-text{
+  position: absolute;
+  top:0%;
+  text-align: center;
+  align-items: center;
+}
+
+.carousel-text div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.lineUp {
+  animation: 3s anim-lineUp ease-in-out alternate;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.carousel-text h2{
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.carousel-text h3{
+  color: #fff;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+@media (max-width: 640px){
+  .carousel-text h2{
+    font-size: 22px;
+  }
+  .carousel-text h3{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+  .carousel-text h2{
+    font-size: 18px;
+  }
+
+  .carousel-text h3{
+    font-size: 13px;
+  }
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px){
+  .carousel-text h2{
+    font-size: 50px;
+  }
+
+  .carousel-text h3{
+    font-size: 22px;
+  }
+}
+ 
+.carousel-text div button:focus{
+  outline: none;
+}
+
+.carousel-text div button{
+  border: none;
+  border-radius: 33px;
+}
+
+.carousel-text div button:hover{
+  transition: 0.5s;
+}
+
+/* Articles */
+
+.item-boxes{
+  border: 1px rgb(232, 227, 227) solid;
+  transition: transform .2s
+}
+
+.item-boxes:hover{
+  transform: scale(1.009999);
+  cursor: pointer;
+}
+
+.item-boxes h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.section-header h2{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: underline #17a2b8;
+  text-underline-offset:12px;
+}
+
+.section-subtitle p{
+  font-size: 14px;
+  color: #546E7A;
+  line-height: 26px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0;
+}
+
+.item-boxes a:hover{
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+.item-boxes:hover{
+  box-shadow: 0 1.5rem 1.5rem rgba(0,0,0,.15)!important;
+  transition: 0.4s;
+}
+
+.item-boxes .lineUp {
+  animation: 3s anim-lineUp ease-in-out alternate;
+}
+
+.visual{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,.6))
+}
+
+.visual div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.visual h2{
+  font-size: 30px;
+}
+.visual div i{
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  transition: transform .2s
+}
+
+.visual div i:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: rgb(194, 194, 194);
+}
+
+/* Owl carousel */
+
+.item{
+  background-color: green;
+}
+
+.section-header02{
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: underline #17a2b8;
+  text-underline-offset:12px; 
+ }
+
+ .item i{
+  color: black;
+ }
+
+.item i:hover{
+  color: rgb(5, 157, 5);
+  transition: 0.5s;
+}
+
+
+/*--------sketch.htm---------*/
+
+.sketch .section-header h2{
+  text-align: left;
+}
+
+
+/*--------story.htm---------*/
+
+.card-body button{
+  border: none;
+  background-color:#17a2b8;
+  color: white;
+  border-radius: 2px;
+}
+
+.card-body button:hover{
+  background-color: #0087ca;
+  transition: 0.5s;
+}
+
+.card-body button:focus{
+  outline: none;
+}
+
+
+
+/*--------storyread.htm---------*/
+
+.storyread div{
+   border-radius: 5px;
+}
+
